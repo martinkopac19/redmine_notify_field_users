@@ -1,0 +1,6 @@
+sk:
+  nfu_setting_enabled: "Upozorňovať ľudí zapísaných v poliach typu používateľ"
+  nfu_settings_hint: "Kto je v úlohe zapísaný napríklad ako Tester alebo Project Manager, dostáva o nej e-maily rovnako ako riešiteľ — kým je v poli uvedený. Pri zmene poľa dostane e-mail aj ten, koho z neho odobrali. Kto má v profile nastavené „Žiadne e-maily“, nedostane nič."
+  nfu_active_fields: "Týka sa týchto polí:"
+  nfu_field_disabled: "pole je skryté, notifikácie z neho nechodia"
+  nfu_no_fields: "Zatiaľ neexistuje žiadne pole úlohy formátu „používateľ“ — plugin nemá koho upozorňovať."

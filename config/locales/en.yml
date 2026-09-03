@@ -1,0 +1,6 @@
+en:
+  nfu_setting_enabled: "Notify people named in user-format custom fields"
+  nfu_settings_hint: "Anyone named in an issue as, say, Tester or Project Manager gets e-mails about it just like the assignee does, for as long as they are in the field. When the field changes, the person removed from it is notified too. People whose profile says \"No events\" get nothing."
+  nfu_active_fields: "Applies to these fields:"
+  nfu_field_disabled: "field is hidden, no notifications from it"
+  nfu_no_fields: "There is no issue field of the \"user\" format yet, so there is nobody to notify."

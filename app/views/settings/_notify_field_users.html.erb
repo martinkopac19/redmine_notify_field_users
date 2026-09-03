@@ -1,0 +1,21 @@
+<p>
+  <label>
+    <%= hidden_field_tag 'settings[enabled]', '0' %>
+    <%= check_box_tag 'settings[enabled]', '1', settings['enabled'].to_s != '0' %>
+    <%= l(:nfu_setting_enabled) %>
+  </label>
+</p>
+
+<p style="color:#888; margin-top:4px;"><%= l(:nfu_settings_hint) %></p>
+
+<% fields = IssueCustomField.where(field_format: 'user').order(:position) %>
+<% if fields.any? %>
+  <p><%= l(:nfu_active_fields) %></p>
+  <ul>
+    <% fields.each do |f| %>
+      <li><%= h(f.name) %><%= " — #{l(:nfu_field_disabled)}" unless f.visible? %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p class="nodata"><%= l(:nfu_no_fields) %></p>
+<% end %>
