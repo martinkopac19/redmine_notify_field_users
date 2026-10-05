@@ -1,0 +1,6 @@
+pl:
+  nfu_setting_enabled: "Powiadamiaj osoby wskazane w polach niestandardowych typu użytkownik"
+  nfu_settings_hint: "Każdy, kto jest wskazany w zagadnieniu np. jako Tester lub Project Manager, dostaje o nim e-maile tak samo jak osoba przypisana — dopóki jest w tym polu. Gdy pole się zmienia, powiadamiana jest także osoba z niego usunięta. Osoby, które mają w profilu ustawione „Brak powiadomień”, nie dostają nic."
+  nfu_active_fields: "Dotyczy tych pól:"
+  nfu_field_disabled: "pole jest ukryte, nie wysyła powiadomień"
+  nfu_no_fields: "Nie ma jeszcze żadnego pola zagadnienia w formacie „użytkownik”, więc nie ma kogo powiadamiać."

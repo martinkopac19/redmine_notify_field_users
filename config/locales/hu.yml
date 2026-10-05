@@ -1,0 +1,6 @@
+hu:
+  nfu_setting_enabled: "Felhasználó formátumú egyéni mezőkben szereplő személyek értesítése"
+  nfu_settings_hint: "Aki egy feladatban például Testerként vagy Project Managerként szerepel, ugyanúgy kap róla e-maileket, mint a felelős, amíg szerepel a mezőben. Amikor a mező megváltozik, a belőle eltávolított személy is értesítést kap. Akiknek a profiljában „Semilyen eseményről” van beállítva, nem kapnak semmit."
+  nfu_active_fields: "Ezekre a mezőkre vonatkozik:"
+  nfu_field_disabled: "a mező rejtett, nem küld értesítést"
+  nfu_no_fields: "Még nincs „Felhasználó” formátumú feladatmező, így nincs kit értesíteni."

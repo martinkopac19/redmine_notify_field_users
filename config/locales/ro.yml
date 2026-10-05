@@ -1,0 +1,6 @@
+ro:
+  nfu_setting_enabled: "Notifică persoanele menționate în câmpurile personalizate de tip utilizator"
+  nfu_settings_hint: "Oricine este trecut într-un tichet, de exemplu, ca Tester sau Project Manager primește e-mailuri despre acesta la fel ca persoana atribuită, atât timp cât este în câmp. Când câmpul se schimbă, este notificată și persoana eliminată din el. Persoanele care au în profil „No events” nu primesc nimic."
+  nfu_active_fields: "Se aplică acestor câmpuri:"
+  nfu_field_disabled: "câmpul este ascuns, nu trimite notificări"
+  nfu_no_fields: "Nu există încă niciun câmp de tichet de tip „utilizator”, deci nu are cine să fie notificat."
