@@ -61,11 +61,25 @@ module NotifyFieldUsers
 
       extra = NotifyFieldUsers::Common.current_users(self)
                                       .select { |u| NotifyFieldUsers::Common.notifiable?(u, self) }
-      (base + extra).uniq
+      (base + filter_out_unwanted(extra)).uniq
     rescue StandardError => e
       # Notifikácia nikdy nesmie zhodiť uloženie úlohy.
       Rails.logger&.error("[notify_field_users] issue #{id}: #{e.class}: #{e.message}")
       base
+    end
+
+    private
+
+    # Režim „Only mentions" z redmine_notification_filter musí platiť aj na ľudí, ktorých
+    # pridávame my — inak by tester dostal mail o novej úlohe, hoci chce len @zmienky.
+    # (Pre úpravy to rieši JournalPatch#filter_out_unwanted.)
+    def filter_out_unwanted(users)
+      filter = defined?(::RedmineNotificationFilter::Filter) && ::RedmineNotificationFilter::Filter
+      return users unless filter && filter.respond_to?(:skip_issue_add?)
+
+      users.reject { |u| filter.skip_issue_add?(u, self) }
+    rescue StandardError
+      users
     end
   end
 end

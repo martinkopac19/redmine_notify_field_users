@@ -19,7 +19,7 @@ Redmine::Plugin.register :redmine_notify_field_users do
   name 'Notify field users (Previo)'
   author 'Martin Kopáč'
   description 'Notifies people named in user-format custom fields (Tester, Project Manager, Code review…).'
-  version '0.1.0'
+  version '0.1.1'
   requires_redmine version_or_higher: '5.0'
   settings default: { 'enabled' => '1' }, partial: 'settings/notify_field_users'
 end
